@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1D68492A4020120005D47F /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D68482A4020120005D47F /* Film.swift */; };
+		9C1D684C2A4021250005D47F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D684B2A4021250005D47F /* Api.swift */; };
+		9C1D684F2A4022300005D47F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 9C1D684E2A4022300005D47F /* Alamofire */; };
+		9C1D68522A4026E60005D47F /* FilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D68512A4026E60005D47F /* FilmViewModel.swift */; };
+		9C1D68542A40271D0005D47F /* FilmDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D68532A40271D0005D47F /* FilmDetailsView.swift */; };
+		9C1D68562A4028350005D47F /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1D68552A4028350005D47F /* SearchResult.swift */; };
+		9CBA8C422A4051C900B71222 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBA8C412A4051C900B71222 /* extension.swift */; };
 		9CFEB02E2A401D3E006DDF3A /* BoxotopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEB02D2A401D3E006DDF3A /* BoxotopApp.swift */; };
 		9CFEB0302A401D3E006DDF3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFEB02F2A401D3E006DDF3A /* ContentView.swift */; };
 		9CFEB0322A401D3F006DDF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CFEB0312A401D3F006DDF3A /* Assets.xcassets */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C1D68482A4020120005D47F /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		9C1D684B2A4021250005D47F /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		9C1D68512A4026E60005D47F /* FilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModel.swift; sourceTree = "<group>"; };
+		9C1D68532A40271D0005D47F /* FilmDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsView.swift; sourceTree = "<group>"; };
+		9C1D68552A4028350005D47F /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		9C1D68572A402DFE0005D47F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CBA8C412A4051C900B71222 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		9CFEB02A2A401D3E006DDF3A /* Boxotop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Boxotop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CFEB02D2A401D3E006DDF3A /* BoxotopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxotopApp.swift; sourceTree = "<group>"; };
 		9CFEB02F2A401D3E006DDF3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1D684F2A4022300005D47F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1D68472A401FB70005D47F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D68482A4020120005D47F /* Film.swift */,
+				9C1D68552A4028350005D47F /* SearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9C1D684A2A4020F90005D47F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D684B2A4021250005D47F /* Api.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9C1D68502A4026CC0005D47F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9C1D68512A4026E60005D47F /* FilmViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		9CFEB0212A401D3E006DDF3A = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +134,12 @@
 		9CFEB02C2A401D3E006DDF3A /* Boxotop */ = {
 			isa = PBXGroup;
 			children = (
+				9C1D68572A402DFE0005D47F /* Info.plist */,
+				9C1D68502A4026CC0005D47F /* ViewModel */,
+				9C1D684A2A4020F90005D47F /* Service */,
+				9C1D68472A401FB70005D47F /* Models */,
+				9CFEB0572A401F0F006DDF3A /* Views */,
 				9CFEB02D2A401D3E006DDF3A /* BoxotopApp.swift */,
-				9CFEB02F2A401D3E006DDF3A /* ContentView.swift */,
 				9CFEB0312A401D3F006DDF3A /* Assets.xcassets */,
 				9CFEB0332A401D3F006DDF3A /* Preview Content */,
 			);
@@ -127,6 +171,16 @@
 			path = BoxotopUITests;
 			sourceTree = "<group>";
 		};
+		9CFEB0572A401F0F006DDF3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CFEB02F2A401D3E006DDF3A /* ContentView.swift */,
+				9C1D68532A40271D0005D47F /* FilmDetailsView.swift */,
+				9CBA8C412A4051C900B71222 /* extension.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +197,9 @@
 			dependencies = (
 			);
 			name = Boxotop;
+			packageProductDependencies = (
+				9C1D684E2A4022300005D47F /* Alamofire */,
+			);
 			productName = Boxotop;
 			productReference = 9CFEB02A2A401D3E006DDF3A /* Boxotop.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +272,9 @@
 				Base,
 			);
 			mainGroup = 9CFEB0212A401D3E006DDF3A;
+			packageReferences = (
+				9C1D684D2A4022300005D47F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 9CFEB02B2A401D3E006DDF3A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CFEB0302A401D3E006DDF3A /* ContentView.swift in Sources */,
+				9C1D68562A4028350005D47F /* SearchResult.swift in Sources */,
+				9C1D68542A40271D0005D47F /* FilmDetailsView.swift in Sources */,
+				9C1D68492A4020120005D47F /* Film.swift in Sources */,
+				9C1D68522A4026E60005D47F /* FilmViewModel.swift in Sources */,
+				9C1D684C2A4021250005D47F /* Api.swift in Sources */,
 				9CFEB02E2A401D3E006DDF3A /* BoxotopApp.swift in Sources */,
+				9CBA8C422A4051C900B71222 /* extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +485,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Boxotop/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boxotop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -447,6 +514,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Boxotop/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Boxotop/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C1D684D2A4022300005D47F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C1D684E2A4022300005D47F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C1D684D2A4022300005D47F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CFEB0222A401D3E006DDF3A /* Project object */;
 }
